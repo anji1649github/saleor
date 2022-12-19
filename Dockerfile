@@ -10,7 +10,7 @@ RUN apt-get -y update \
 # Install Python dependencies
 COPY requirements_dev.txt /app/
 WORKDIR /app
-RUN pip install -r requirements_dev.txt
+RUN pip3 install -r requirements_dev.txt
 
 ### Final image
 FROM python:3.9-slim
